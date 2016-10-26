@@ -1,1 +1,1 @@
-# my_sample
+# This is just asample repository
