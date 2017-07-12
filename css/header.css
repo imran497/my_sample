@@ -1,0 +1,15 @@
+.header-container{
+  position: fixed;
+  height: 100px;
+  z-index: 99;
+}
+
+.logo-title{
+  color: #b53a3a;
+  font-size: 30px;
+  font-family: "CamptonBook";
+  font-weight: bold;
+  line-height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}

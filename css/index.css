@@ -1,0 +1,152 @@
+body{
+  /*background-image: url("../images/worn_dots.png");*/
+}
+
+*{
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'AkkuProBold';
+  src: url('fonts/AkkuratProBold.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'AkkuProReg';
+  src: url('fonts/AkkuratProRegular.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'CamptonBook';
+  src: url('fonts/CamptonBook.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'CamptonLight';
+  src: url('fonts/CamptonExtraLight.woff') format('woff');
+}
+
+/* home.html styles */
+#slider-images{
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+#slider-images div{
+  overflow: hidden;
+}
+
+#slider-images img{
+  height: 100%;
+  opacity: 0.5;
+  -webkit-filter: grayscale(70%);
+}
+
+#text-content-div{
+  position: fixed;
+  top: 25%;
+  z-index: 1;
+  text-align: center;
+}
+
+#text-content-div > a{
+  margin-top: 100px;
+}
+
+.main-text{
+  font-family: "CamptonBook";
+  font-size: 80px;
+  text-shadow: 0px 0px 2px black;
+  color: white;
+}
+
+/* SEARCH.HTML STYLES */
+#search-div{
+  margin-top: 120px;
+}
+
+.movie-content-display{
+  word-break: break-all;
+  height: 420px;
+  width: 320px;
+  overflow: hidden;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.movie-data{
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  font-family: "CamptonBook";
+  height: 0px;
+  width: 100%;
+  transition: height 1s;
+  font-size: 22px;
+  background-color: rgba(255, 255, 255, 0.5);
+  word-break: break-all;
+}
+
+.movie-data > p{
+  margin-top: 150px;
+}
+
+.movie-content-display:hover .movie-data{
+  height: 100%;
+  color: #13055e;
+}
+
+.single-movie-display{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: scroll;
+}
+
+.single-movie-display >div{
+  background-color: white;
+  margin-top: 4em;
+}
+
+.title{
+  padding: 2px;
+  text-align: center;
+  font-size: 22px;
+  color: #992501;
+  font-family: "CamptonBook";
+}
+
+.details{
+  padding: 2px;
+  font-size: 18px;
+  font-family: "CamptonBook";
+}
+
+.details > div{
+  word-break: break-all;
+}
+
+/* MOBILE CSS */
+@media only screen and (min-width: 769px) {
+  div#slider-images img{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-text{
+    font-size: 52px;
+  }
+
+  .single-movie-display > div{
+    margin-top: 0px;
+  }
+
+  .details{
+    text-align: center;
+  }
+}
